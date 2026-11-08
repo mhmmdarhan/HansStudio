@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="Visual impresif dan unik tanpa repot bersama HansStudio. Jasa generate gambar AI sesuai ide dan kebutuhanmu.">
+  <title>HansStudio — Visual Impresif Tanpa Repot</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="portfolio-data.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar wrap" aria-label="Navigasi utama">
+      <a class="brand" href="#home" aria-label="HansStudio, beranda"><span class="brand-mark">H</span><span class="brand-name">HANS<span>STUDIO</span></span></a>
+      <button class="menu-toggle" type="button" aria-label="Buka menu" aria-expanded="false" aria-controls="nav-links">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#home">Home</a>
+        <a href="#kenapa">Kenapa Kami</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#harga">Harga</a>
+        <a href="#portofolio">Portofolio</a>
+        <a href="#cara-pesan">Cara Pesan</a>
+        <a href="#faq">FAQ</a>
+        <a class="nav-contact" href="#kontak">Kontak</a>
+      </div>
+      <button class="cart-trigger" id="cart-trigger" type="button" aria-label="Buka keranjang, 0 item">
+        <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i><span>Keranjang</span><span class="cart-count" id="cart-count">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-photo" role="img" aria-label="Lanskap surreal sebagai contoh visual hasil generate AI"></div>
+      <div class="hero-shade"></div>
+      <div class="hero-content wrap">
+        <p class="eyebrow"><span></span> AI VISUAL STUDIO <b>•</b> MADE FOR YOUR IDEA</p>
+        <h1>Visual Impresif &amp; Unik<br>Tanpa Repot Bersama <em>HansStudio.</em></h1>
+        <p class="hero-copy">Jasa generate gambar AI berkualitas tinggi sesuai request kamu. Cocok untuk background, wallpaper, hingga aset media sosial.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="https://web.whatsapp.com/send?phone=6288233141632&amp;text=Halo%20HansStudio%2C%20saya%20ingin%20pesan%20gambar%20AI.%20Ide%20saya%3A%20" target="_blank" rel="noopener noreferrer">Pesan Gambar Sekarang <i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+          <a class="button button-outline" href="#portofolio">Lihat Portofolio <i class="fa-solid fa-arrow-down" aria-hidden="true"></i></a>
+        </div>
+        <div class="hero-proof"><span class="proof-stars" aria-label="Lima bintang">★★★★★</span><span>Visual dibuat khusus untuk idemu</span></div>
+      </div>
+      <div class="hero-side-note"><span>01</span><span></span><span>VISUAL TANPA BATAS</span></div>
+    </section>
+
+    <section class="message-section" aria-label="Kirim ide melalui WhatsApp">
+      <div class="wrap message-section-inner">
+        <h2 class="message-heading">Punya ide visual? <em>Yuk, kita buat!</em></h2>
+        <form class="whatsapp-composer" id="whatsapp-composer">
+          <label class="composer-category" for="whatsapp-category">
+            <span>Kategori</span>
+            <select id="whatsapp-category" name="category">
+              <option value="">Pilih kategori (opsional)</option>
+              <option value="Nature">Nature</option>
+              <option value="Animal">Animal</option>
+              <option value="Interior">Interior</option>
+              <option value="Fashion">Fashion</option>
+              <option value="Lainnya">Lainnya</option>
+            </select>
+          </label>
+          <label class="sr-only" for="whatsapp-message">Tulis ide atau pesan untuk HansStudio</label>
+          <textarea id="whatsapp-message" name="message" rows="2" maxlength="1000" placeholder="Buat gambar yang kamu inginkan..."></textarea>
+          <button class="composer-send" type="submit" aria-label="Kirim pesan melalui WhatsApp Web"><i class="fa-solid fa-arrow-up" aria-hidden="true"></i></button>
+        </form>
+        <p class="composer-hint">Pesan akan dibuka di WhatsApp Web. Tekan Kirim di WhatsApp untuk mengirimnya.</p>
+      </div>
+    </section>
+
+    <section class="section why wrap" id="kenapa">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow"><span></span> VISUAL DENGAN ARAH YANG JELAS</p>
+          <h2>Kenapa memilih<br><em>HansStudio?</em></h2>
+        </div>
+        <p class="section-intro">Dari ide pertama sampai visual siap pakai, prosesnya dibuat personal, ringkas, dan terarah.</p>
+      </div>
+      <div class="benefit-grid">
+        <article class="benefit-card"><span class="benefit-icon"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i></span><span class="benefit-number">01</span><h3>Kustomisasi Sepenuhnya</h3><p>Setiap gambar dibuat khusus sesuai prompt dan brief unik darimu, bukan stok gambar generik.</p></article>
+        <article class="benefit-card"><span class="benefit-icon"><i class="fa-solid fa-up-right-and-down-left-from-center" aria-hidden="true"></i></span><span class="benefit-number">02</span><h3>Kualitas Resolusi Tinggi</h3><p>Gambar tajam dan siap digunakan untuk wallpaper, cetak, hingga background proyek.</p></article>
+        <article class="benefit-card"><span class="benefit-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></span><span class="benefit-number">03</span><h3>Proses Cepat &amp; Efisien</h3><p>Tak perlu belajar prompt engineering atau berlangganan AI mahal. Beri ide, kami yang buat visualnya.</p></article>
+        <article class="benefit-card"><span class="benefit-icon"><i class="fa-solid fa-shapes" aria-hidden="true"></i></span><span class="benefit-number">04</span><h3>Pilihan Kategori Luas</h3><p>Jelajahi visual alam, hewan, interior, fashion, dan beragam konsep lain sesuai kebutuhanmu.</p></article>
+      </div>
+    </section>
+
+    <section class="section services" id="layanan">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span></span> KATEGORI &amp; PORTOFOLIO</p><h2>Satu ide. Banyak<br><em>kemungkinan.</em></h2></div>
+          <p class="section-intro">Lihat beberapa arah visual yang bisa kita eksplorasi bersama. Setiap hasil dibuat berdasarkan brief-mu.</p>
+        </div>
+        <div class="service-grid">
+          <a class="service-card" href="#paket-nature" aria-label="Lihat paket Nature" style="--img: url('https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&amp;fit=crop&amp;w=1100&amp;q=85')">
+            <div class="service-card-top"><span>01 / 04</span><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></div>
+            <div class="card-label"><span>Alam, lanskap, dunia surreal</span><h3>Nature</h3><p>Pegunungan, pantai, hingga dunia fantasi.</p></div>
+          </a>
+          <a class="service-card" href="#paket-animal" aria-label="Lihat paket Animal" style="--img: url('https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&amp;fit=crop&amp;w=1100&amp;q=85')">
+            <div class="service-card-top"><span>02 / 04</span><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></div>
+            <div class="card-label"><span>Satwa, karakter, ilustrasi</span><h3>Animal</h3><p>Potret realistis sampai karakter imut.</p></div>
+          </a>
+          <a class="service-card" href="#paket-interior" aria-label="Lihat paket Interior" style="--img: url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&amp;fit=crop&amp;w=1100&amp;q=85')">
+            <div class="service-card-top"><span>03 / 04</span><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></div>
+            <div class="card-label"><span>Arsitektur, dekorasi, ruang</span><h3>Interior</h3><p>Konsep ruang estetik dengan karakter.</p></div>
+          </a>
+          <a class="service-card" href="#paket-fashion" aria-label="Lihat paket Fashion" style="--img: url('https://images.unsplash.com/photo-1539109136881-3be0616acf4b?auto=format&amp;fit=crop&amp;w=1100&amp;q=85')">
+            <div class="service-card-top"><span>04 / 04</span><i class="fa-solid fa-arrow-down" aria-hidden="true"></i></div>
+            <div class="card-label"><span>Editorial, outfit, photoshoot</span><h3>Fashion</h3><p>Gaya modis untuk visual yang standout.</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section pricing" id="harga">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span></span> PILIH PAKET VISUAL</p><h2>Harga yang<br><em>jelas.</em></h2></div>
+          <p class="section-intro">Pilih kategori yang sesuai dengan idemu, lalu hubungi kami untuk mulai memesan.</p>
+        </div>
+        <div class="package-includes">
+          <strong>Setiap paket mencakup 4 gambar.</strong>
+          <span>Resolusi menyesuaikan kebutuhanmu. Pesanan diproses secepat mungkin, dan estimasi pengerjaan dikonfirmasi sebelum proses dimulai.</span>
+          <span>Tidak termasuk revisi; kami memilih hasil terbaik dari proses generate.</span>
+        </div>
+        <div class="price-grid">
+          <article class="price-card" id="paket-nature">
+            <span class="price-category"><i class="fa-solid fa-mountain-sun" aria-hidden="true"></i> NATURE</span>
+            <h3>Paket Nature</h3>
+            <p class="price-value">Rp30.000</p>
+            <button class="price-order add-to-cart" type="button" data-package="Nature" data-price="30000">Tambah ke keranjang <i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+          </article>
+          <article class="price-card" id="paket-animal">
+            <span class="price-category"><i class="fa-solid fa-paw" aria-hidden="true"></i> ANIMAL</span>
+            <h3>Paket Animal</h3>
+            <p class="price-value">Rp30.000</p>
+            <button class="price-order add-to-cart" type="button" data-package="Animal" data-price="30000">Tambah ke keranjang <i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+          </article>
+          <article class="price-card" id="paket-interior">
+            <span class="price-category"><i class="fa-solid fa-couch" aria-hidden="true"></i> INTERIOR</span>
+            <h3>Paket Interior</h3>
+            <p class="price-value">Rp30.000</p>
+            <button class="price-order add-to-cart" type="button" data-package="Interior" data-price="30000">Tambah ke keranjang <i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+          </article>
+          <article class="price-card" id="paket-fashion">
+            <span class="price-category"><i class="fa-solid fa-shirt" aria-hidden="true"></i> FASHION</span>
+            <h3>Paket Fashion</h3>
+            <p class="price-value">Rp50.000</p>
+            <button class="price-order add-to-cart" type="button" data-package="Fashion" data-price="50000">Tambah ke keranjang <i class="fa-solid fa-plus" aria-hidden="true"></i></button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section portfolio" id="portofolio">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span></span> HASIL VISUAL HANSSTUDIO</p><h2>Portofolio<br><em>pilihan.</em></h2></div>
+          <p class="section-intro">Eksplorasi visual alam, hewan, dan interior yang dibuat dari ide menjadi gambar.</p>
+        </div>
+        <div class="portfolio-grid" aria-live="polite">
+          <p class="portfolio-status">Portofolio belum dibuat. Jalankan Perbarui-Portofolio.bat.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works" id="cara-pesan">
+      <div class="wrap">
+        <div class="section-heading">
+          <div><p class="eyebrow"><span></span> SEDERHANA DARI AWAL</p><h2 id="how-title">Idemu jadi visual<br><em>dalam 3 langkah.</em></h2></div>
+          <p class="section-intro">Kamu bawa idenya, kami bantu mengubahnya jadi gambar yang siap digunakan.</p>
+        </div>
+        <div class="steps-grid" aria-labelledby="how-title">
+          <article class="step"><span class="step-number">01</span><span class="step-icon"><i class="fa-regular fa-comment-dots" aria-hidden="true"></i></span><h3>Pilih Kategori &amp; Kirim Brief</h3><p>Tentukan kategori dan jelaskan konsep atau keinginan gambar kamu secara detail.</p></article>
+          <article class="step"><span class="step-number">02</span><span class="step-icon"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i></span><h3>Proses Generate</h3><p>HansStudio meracik prompt khusus dan memilih style terbaik untuk mengeksekusi idemu.</p></article>
+          <article class="step"><span class="step-number">03</span><span class="step-icon"><i class="fa-regular fa-circle-check" aria-hidden="true"></i></span><h3>Review &amp; Hasil Akhir</h3><p>Kamu menerima hasil gambar resolusi tinggi yang siap digunakan untuk kebutuhanmu.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq wrap" id="faq">
+      <div class="section-heading">
+        <div><p class="eyebrow"><span></span> SEBELUM MEMESAN</p><h2>Pertanyaan yang<br><em>sering muncul.</em></h2></div>
+        <p class="section-intro">Informasi paket dan proses pemesanan HansStudio. Untuk kebutuhan khusus, silakan konfirmasi melalui WhatsApp sebelum membayar.</p>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Apa saja yang didapat dari satu paket?</summary>
+          <p>Setiap paket berisi 4 gambar dari kategori yang dipilih. Harga paket tercantum di bagian harga. Untuk menambah portofolio, simpan gambar JPG, JPEG, PNG, WEBP, atau GIF langsung di folder Images. Lalu klik dua kali Perbarui-Portofolio.bat dan muat ulang halaman dengan Ctrl+R. Nama file seperti Nature, Kucing, Interior, atau Fashion membantu memilih kategori secara otomatis.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Bagaimana dengan resolusi gambar?</summary>
+          <p>Resolusi disesuaikan dengan kebutuhanmu. Sampaikan tujuan penggunaan dan ukuran yang diinginkan saat mengirim brief.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Berapa lama proses pengerjaannya?</summary>
+          <p>Pesanan diproses secepat mungkin. Estimasi pengerjaan akan dikonfirmasi melalui WhatsApp sebelum proses dimulai.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Apakah bisa meminta revisi?</summary>
+          <p>Revisi tidak termasuk dalam paket. HansStudio akan memilih hasil terbaik dari proses generate berdasarkan brief yang kamu kirim.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Bagaimana cara membayar?</summary>
+          <p>Tambahkan paket ke keranjang, lanjutkan untuk melihat QRIS, lalu pindai dan bayar sesuai total. Setelah membayar, kirim bukti transaksi melalui WhatsApp.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Apakah gambar boleh digunakan untuk keperluan komersial?</summary>
+          <p>Konfirmasikan kebutuhan penggunaan komersial dan ketentuan penggunaannya melalui WhatsApp sebelum memesan.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="contact" id="kontak">
+      <div class="contact-inner wrap">
+        <p class="eyebrow"><span></span> SIAP MULAI?</p>
+        <h2>Ide visualmu dimulai<br><em>dari sini.</em></h2>
+        <p class="contact-copy">Kirim brief dan referensimu lewat WhatsApp. Kami siap bantu mewujudkan visual yang kamu bayangkan.</p>
+        <a class="button button-primary" href="https://web.whatsapp.com/send?phone=6288233141632&amp;text=Halo%20HansStudio%2C%20saya%20ingin%20pesan%20gambar%20AI.%20Ide%20saya%3A%20" target="_blank" rel="noopener noreferrer">Pesan via WhatsApp <i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main wrap">
+      <div class="footer-brand"><a class="brand" href="#home"><span class="brand-mark">H</span><span class="brand-name">HANS<span>STUDIO</span></span></a><p>Visual yang berawal dari idemu.</p></div>
+      <div class="footer-column"><span class="footer-title">Jelajahi</span><a href="#kenapa">Kenapa Kami</a><a href="#layanan">Kategori</a><a href="#cara-pesan">Cara Pesan</a></div>
+      <div class="footer-column"><span class="footer-title">Ikuti &amp; hubungi</span><a href="https://instagram.com/muhammadarhannx" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i> @muhammadarhannx</a><a href="https://web.whatsapp.com/send?phone=6288233141632&amp;text=Halo%20HansStudio%2C%20saya%20ingin%20bertanya%20tentang%20jasa%20gambar%20AI." target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i> WhatsApp</a></div>
+    </div>
+    <div class="footer-bottom wrap"><span>© 2026 HansStudio. Hak cipta dilindungi.</span><a href="#home">Kembali ke atas <i class="fa-solid fa-arrow-up" aria-hidden="true"></i></a></div>
+  </footer>
+
+  <dialog class="portfolio-lightbox" id="portfolio-dialog" aria-label="Pratinjau gambar portofolio">
+    <button class="dialog-close portfolio-lightbox-close" type="button" data-close-dialog aria-label="Tutup pratinjau"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    <img id="portfolio-preview-image" src="" alt="">
+    <div class="portfolio-preview-caption"><span id="portfolio-preview-category"></span><strong id="portfolio-preview-title"></strong></div>
+  </dialog>
+
+  <dialog class="checkout-dialog cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+    <div class="dialog-header">
+      <div><p class="eyebrow"><span></span> PESANAN KAMU</p><h2 id="cart-title">Keranjang</h2></div>
+      <button class="dialog-close" type="button" data-close-dialog aria-label="Tutup keranjang"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    </div>
+    <div class="cart-items" id="cart-items"></div>
+    <div class="cart-empty" id="cart-empty"><i class="fa-solid fa-bag-shopping" aria-hidden="true"></i><p>Keranjangmu masih kosong.</p><button class="text-action" type="button" data-close-dialog>Lihat paket</button></div>
+    <div class="dialog-total"><span>Total</span><strong id="cart-total">Rp0</strong></div>
+    <button class="button button-primary dialog-primary" id="checkout-button" type="button" disabled>Lanjut ke pembayaran <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+  </dialog>
+
+  <dialog class="checkout-dialog payment-dialog" id="payment-dialog" aria-labelledby="payment-title">
+    <div class="dialog-header">
+      <div><p class="eyebrow"><span></span> PEMBAYARAN MANUAL</p><h2 id="payment-title">Bayar via QRIS</h2></div>
+      <button class="dialog-close" type="button" data-close-dialog aria-label="Tutup pembayaran"><i class="fa-solid fa-xmark" aria-hidden="true"></i></button>
+    </div>
+    <div class="payment-summary"><span>Total pembayaran</span><strong id="payment-total">Rp0</strong></div>
+    <div class="qr-area" id="qr-area">
+      <div class="qr-placeholder"><i class="fa-solid fa-qrcode" aria-hidden="true"></i><strong>Memuat kode QRIS...</strong><span>Mohon tunggu sebentar.</span></div>
+    </div>
+    <p class="payment-note">Pindai QRIS dan bayar sesuai total. Setelah membayar, kirim bukti transaksi lewat WhatsApp.</p>
+    <a class="button button-primary dialog-primary" id="payment-confirm-link" href="https://web.whatsapp.com/send?phone=6288233141632" target="_blank" rel="noopener noreferrer">Kirim detail pesanan via WhatsApp <i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+    <button class="text-action return-cart" id="return-to-cart" type="button">Kembali ke keranjang</button>
+  </dialog>
+</body>
+</html>
